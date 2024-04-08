@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>\anchcode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <h1 class="logo">\aunchcode</h1>
+            <ol>
+                <li><i class="fa-solid fa-house"></i>Dashboard</li>
+                <li><i class="fa fa-diamond"></i>Categories</li>
+                <li><i class="fa fa-user-circle-o"></i>User</li>
+                <li><i class="fa-solid fa-shop"></i>Billing</li>
+                <li><i class="fa fa-pie-chart"></i>Reporting</li>
+                <li><i class="fa fa-times-circle-o"></i>promote</li>
+            </ol>
+            <h6 id="bottomtexthelp"><i class="fa fa-question-circle-o" id="icons"></i>Help & getting started</h6>
+            <input type="checkbox" id="toggle" class="toggleCheckbox" />
+            <label for="toggle" class='toggleContainer'>
+            <div><i class="	fa fa-sun-o" id="icons"></i>Light</div>   
+            <div><i class="fa fa-moon-o" id="icons"></i>Dark</div>
+            </label>
+        </div>
+        <div class="page">
+            <div class="top">
+                <div>
+                    <span><i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                    <input type="text" placeholder="Search or type a command"></span>
+                    <i id="bell" class="fa-regular fa-bell"></i>
+                    <i class="fa fa-user-circle-o" id="iconsprofile"> </i>
+
+                </div>
+            </div>
+            <div class="split">
+                <div class="secpage">
+                    <div class="menu">
+                        <ol class="mainlist">
+                            <li> <a href="#">Comapny</a></li>
+                            <li> <a href="#">Activities</a></li>
+                            <li> <a href="#">Users</a></li>
+                            <li> <a href="#">Plan</a></li>
+                            <li> <a href="#">Demographic</a></li>
+                            
+                        </ol>
+                    </div>
+                    <div class="content">
+                        <h1><i class="fa-solid fa-mobile" style="color: #f7d4f6;"></i>Company Breakdown</h1>
+                        <ol class="head">
+                            <li>Company</li>
+                            <li>Status</li>
+                            <li>Industry</li>
+                            <li>Active Users</li>
+                            <li>Inactive Users</li>
+                        </ol>
+                        <ol>
+                            <li> <img src="6440e680-fcb0-11ea-8c91-01cd53690175-removebg-preview.png" alt="launchcode" style="height: 50px;" id="launchcodeicon"> Launchcode Inc.</li>
+                            <li id="q">Active</li>
+                            <li id="s">Tech</li>
+                            <li id="d">100</li>
+                            <li id="f">10</li>
+                        </ol>
+                        <ol>
+                            <li> <img src="wealthsimple.png" alt="wealthsimple" height="50px" style="padding-right: 16px;" id="wealthicon"> <span id="wealt">Wealthsimple</span></li>
+                            <li id="w">Active</li>
+                            <li id="u">Financial</li>
+                            <li id="g">83</li>
+                            <li id="h">8</li>
+                        </ol>
+                        <ol>
+                            <li> <img src="walmart.png" alt="walmart" height="60px" style="padding-right: 18px;"> <span id="Walmart">Walmart</span></li>
+                            <li id="e">Active</li>
+                            <li id="i">Retail</li>
+                            <li id="j">70</li>
+                            <li id="k">50</li>
+                        </ol>
+                        <ol>
+                            <li> <img src="microsoft.png" alt="microsoft" height="60px" style="padding-right: 19px;"> <span id="Microsoftcanada">Microsoft Canada</span></li>
+                            <li id="r">Active</li>
+                            <li id="o">Tech</li>
+                            <li id="l">60</li>
+                            <li id="z">40</li>
+                        </ol>
+                        <ol>
+                            <li> <img src="shell.png" alt="shell" height="50px" style="padding-right: 20px;"> <span id="Shell">Shell</span></li>
+                            <li id="t">Active</li>
+                            <li id="p">Oil & Gas</li>
+                            <li id="x">50</li>
+                            <li id="c">100</li>
+                        </ol>
+                        <ol>
+                            <li> <img src="logo-Meta-removebg-preview.png" alt="suncer" height="30px" style="padding-right: 20px;"> <span id="suncer">suncer</span></li>
+                            <li id="y">deative</li> 
+                            <li id="a">Oil & Gas</li>
+                            <li id="v">0</li>
+                            <li id="b">100</li>
+                        </ol>
+                    </div>
+                </div>
+                <ol class="dropdown ">
+                    <li class="inp"><a href="#"><input type="text" placeholder="  Filter by                                                                      X"></a>
+                        <ol class="inner">
+                            <li><a href="#"></a>Ranking</li>
+                            <li class="exp"><a href="#"></a><i class="fa-solid fa-image" id="icon"></i>Active User <span class="mini">Ascending</span><span><i class="fa-solid fa-sort-down fa-rotate-270" id="arrow"></i></span></li>
+                            <hr color="#9c9999">
+                            <li class="filter"><a href="#"></a>Filter</li>
+                            <li class="exp"><a href="#"></a><i class="fa-solid fa-image" id="icon"></i>Comapany <span class="mini">All</span><span class="arrow"><i class="fa-solid fa-sort-down fa-rotate-270" id="arrow"></i></span></li>
+                            <li class="exp"><a href="#"></a><i class="fa-solid fa-image" id="icon"></i>Industry <span class="mini">Tech Financial Oil & Gas</span><span class="arrow"><i class="fa-solid fa-sort-down fa-rotate-270" id="arrow"></i></span></li>
+                            <li class="exp"><a href="#"></a><i class="fa-solid fa-image" id="icon"></i>Activities <span class="mini">All</span><span class="arrow"><i class="fa-solid fa-sort-down fa-rotate-270" id="arrow"></i></span></li>
+                            <li class="exp"><a href="#"></a><i class="fa-solid fa-image" id="icon"></i>Subscription Plan<span class="mini">All</span><span class="arrow"><i class="fa-solid fa-sort-down fa-rotate-270" id="arrow"></i></span></li>
+                            <li class="exp"><a href="#"></a><i class="fa-solid fa-image" id="icon"></i>Gender<span class="mini">All</span><span class="arrow"><i class="fa-solid fa-sort-down fa-rotate-270" id="arrow"></i></span></li>
+                            <li class="exp"><a href="#"></a><i class="fa-solid fa-image" id="icon"></i>Age<span class="mini">All</span><span class="arrow"><i class="fa-solid fa-sort-down fa-rotate-270" id="arrow"></i></span></li>
+                        </ol>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

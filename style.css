@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    background-color: black;
+}
+.page{
+    display: block;
+}
+.top{
+    display: inline-flex;
+}
+.top i{
+    margin-top:20px;
+}
+.acc .dropdown{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: hwb(0 60% 39%);
+}
+.mainlist li{
+    display: inline-block;
+}
+#iconsprofile{
+    color: white;
+    font-size: x-large;
+    margin-left:100px ;
+}
+ #bottomtexthelp{
+    color: hwb(0 60% 39%);
+    padding: 30px;
+    margin-top: 350px;
+    font-size: 20px;
+}
+.toggleContainer {
+    margin-top: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid #343434;
+    border-radius: 20px;
+    background: #343434;
+    font-weight: bold;
+    color: #343434;
+    cursor: pointer;
+    width: 320px;
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 11px;
+    margin-right: 20px;
+}
+.toggleContainer::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    margin-top: 2px;
+    height: 90%;
+    left: 0%;
+    border-radius:20px;
+    background: rgb(73, 72, 72);
+    transition: all 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer::before {
+     left: 50%;
+}
+.toggleContainer div {
+    padding: 6px;
+    text-align: center;
+    z-index: 1;
+    font-size: 20px;
+}
+.toggleCheckbox {
+    display: none;
+}
+.toggleCheckbox:checked + .toggleContainer div:first-child{
+    color: hwb(0 60% 39%);
+    transition: color 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer div:last-child{
+    color: white;
+    transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:first-child{
+    color: white;
+    transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:last-child{
+    color: hwb(0 60% 39%);
+    transition: color 0.3s;
+}
+.logo{
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.dashboard{
+    background-color: rgb(64, 63, 63);
+    color: rgb(228, 225, 225);
+    height: 100%;
+}
+.dashboard ol li{
+    color: hwb(0 60% 39%);
+    display: block;
+    list-style: none;
+    padding: 8px;
+    margin-top: 25px;
+    font-size: 18px;
+    margin-left: 25px;
+}.dashboard ol li:hover{
+    border: none;
+    background-color: rgb(32, 31, 31);
+    border-radius: 10px;
+    width: 280px;
+    color: white;
+
+}
+.dashboard ol li i{
+    padding-right: 10px;
+}
+.top{
+    background-color: rgb(42, 41, 41);
+    width: 1569px;
+    height: 90px;
+}
+.top span i{
+    padding: 5px;
+}
+.top input{
+    border: none;
+    background-color: transparent;
+    padding: 7px;
+    font-size: 18px;
+    border-color: transparent;
+    padding-right: 250px;
+}
+.top span{
+    border: 1px solid;
+    margin-left: 50px;
+    padding: 10px;
+    padding-right: 2px;
+    padding-bottom: 10px;
+}
+#bell{
+    margin-top: 20px;
+    margin-left: 800px;
+    color: #9c9999;
+    font-size: 20px;
+}
+.split{
+    background-color: rgb(32, 32, 32);
+    margin: 20px;
+    margin-bottom:0px;
+    margin-right: 30px;
+}
+.split{
+    display: flex;
+}
+.content{
+    width: 1100px;
+    height: 760px;
+    color: white;
+
+}
+.content ol li{
+    list-style: none;
+    padding-left: 20px;
+    display: inline;
+}
+.mainlist li{
+    margin-left: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 40px;
+
+}
+.mainlist li:hover{
+    background-color: black;
+    border-radius: 5px;
+
+}
+.dropdown{
+    background-color: rgb(32, 32, 32);
+    width: 230px;
+    margin-top: 15px;
+
+}
+.dropdown input{
+    height: 30px;
+    width: 350px;
+    border-radius: 10px;
+    border-color: blue;
+    border: 1px solid;
+}
+
+.content h1{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.content h1 i{
+    padding-right: 20px;
+}
+.head{
+    margin-top: 30px;
+}
+.head li{
+    margin-left: 30px;
+    font-size: 20px;
+    margin-right: 70px;
+    width: 2px;
+
+}
+#q{
+    margin-left: 20px;
+    color: rgb(42, 204, 42);
+    padding-right: 20px;
+    background-color: rgba(144, 194, 144, 0.144);
+    padding-top: 2px;
+    padding-bottom: 2px;    
+    border-radius: 3px;
+    margin-left: 30px;
+}
+#w{
+    margin-left: 39px;
+    color: rgb(42, 204, 42);
+    padding-right: 20px;
+    background-color: rgba(144, 194, 144, 0.144);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    margin-left: 47px;
+}
+#e{
+    margin-left: 69px;
+    color: rgb(42, 204, 42);
+    padding-right: 20px;
+    background-color: rgba(144, 194, 144, 0.144);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    margin-left: 79px;
+}
+#r{
+    margin-left: 8px;
+    color: rgb(42, 204, 42);
+    padding-right: 20px;
+    background-color: rgba(144, 194, 144, 0.144);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+#t{
+    margin-left: 90px;
+    color: rgb(42, 204, 42);
+    padding-right: 20px;
+    background-color: rgba(144, 194, 144, 0.144);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    margin-left: 95px;
+}
+#y{
+    margin-left: 80px;    
+    color: rgb(250, 12, 12);
+    padding-right: 20px;
+    background-color: rgba(235, 146, 105, 0.185);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    margin-left: 85px;
+}
+#u{
+    margin-left: 100px;
+}
+#i{
+    margin-left: 100px;
+}
+#o{
+    margin-left: 100px;
+}
+#p{
+    margin-left: 90px;
+}
+#a{
+    margin-left: 90px;
+}
+#s{
+    margin-left: 100px;
+}
+#d{
+    margin-left: 160px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#f{
+    margin-left: 170px;
+    background-color: #3f3f4998;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#g{
+    margin-left: 135px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#h{
+    margin-left: 178px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#j{
+    margin-left: 160px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#k{
+    margin-left: 170px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;    
+    border-radius: 5px;
+}
+#l{
+    margin-left: 170px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#z{
+    margin-left: 170px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#x{
+    margin-left: 145px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#c{
+    margin-left: 165px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#v{
+    margin-left: 145px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+#b{
+    margin-left: 170px;
+    background-color: rgba(63, 63, 73, 0.596);
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+.content ol{
+    margin-bottom: 40px;
+}
+#launchcodeicon{
+    padding-right: 23px;
+}
+
+#wealt{
+    padding-left: 9px;
+}
+#Walmart{
+    padding-left: 1px;
+}
+#Microsoftcanada{
+    padding-left: 0px;
+}
+#Shell{
+    padding-left: 10px;
+}
+#suncer{
+    padding-left: 8px;
+}
+.dropdown{
+    list-style: none;
+}
+.dropdown ol{
+    padding-top:30px;
+    list-style: none;
+    display: none; 
+    background-color: rgba(63, 63, 73, 0.596);
+    width: 400px;
+    color: white;
+    height: 650px;
+}
+.mini{
+    font-size: smaller;
+    padding-top: 10px;
+    margin-left: 40px;
+    color: grey;
+}
+.dropdown .inp:hover ol{
+    display: block;
+    position: relative;
+
+}
+.dropdown ol li{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.dropdown ol li span{
+    display:block;
+}
+
+.dropdown ol li span #arrow{
+    position: absolute;
+    right: 40px;
+}
+
+.dropdown #icon{
+    border-radius: 20px;
+    color: white;
+    padding: 5px;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+.inner{
+    padding-left:10px;
+}
+.exp{
+    padding-left: 30px;
+}
+.filter{
+    padding: 30px 0px 0px 0px;
+}
